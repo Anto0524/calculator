@@ -1,0 +1,74 @@
+*{
+    margin:0%;
+    padding:0%;
+    border:0%;
+}
+h1{
+    color: #f0f0f0;
+}
+
+#calculator {
+    margin-left: 30%;
+    margin-top: 10%;
+    width: 25%;
+    height:100%;
+    background-color: #b71d8b;
+    padding: 20px;
+    border-radius: 10px;
+    animation:10s nav infinite;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border: 2 solid black;
+}
+@keyframes nav{
+    20%{color:rgb(1, 1, 27)}
+    40%{background-color:rgb(195, 198, 107)}
+    60%{color:rgb(214, 130, 34)}
+    80%{color:rgba(246, 245, 248, 0.863)}
+    100%{background-color:rgb(54, 37, 232)}
+
+}
+
+#display {
+    width: 90%;
+    height: 100%;
+    background-color: #f0f0f0;
+    text-align: right;
+    padding: 10px;
+    font-size: 2em;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    row-gap: 20px;
+}
+.btn {
+    width: 23%;
+    padding: 16px;
+    background-color: #e0e0e0;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    row-gap: 20px;
+}
+
+.btn:hover {
+    background-color: #d1d1d1;
+}
+.equal {
+    width:96%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+.equal:hover {
+    background-color: #a7d2a9;
+}
